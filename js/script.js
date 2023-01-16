@@ -9,6 +9,11 @@ button.addEventListener("click", function () {
     let day = Number(dataIn.slice(-2))
     let dataFn = dateEnd.value
     let day1 = Number(dataFn.slice(-2))
+    
+    if(dataIn[6] != dataFn[6] || dataIn[7] != dataFn[7]){
+        alert("As datas precisam estar no mesmo mes")
+        clear()
+    }
 
     for (const key in daysArray) {
         if (Number(key) == (day - 1)) {
