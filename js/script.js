@@ -10,7 +10,7 @@ button.addEventListener("click", () => {
     const dataFn = dateEnd.value;
     const endDay = Number(dataFn.slice(-2));
     
-    if(dataIn.slice(-2) !== dataFn.slice(-2)){
+    if(dataIn.slice(0,7) !== dataFn.slice(0,7) ){
         alert("As datas precisam estar no mesmo mes")
         clear();
         return;
